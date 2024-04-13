@@ -1,4 +1,8 @@
 # gic_windTurbine_website_live
+
+N.B. for paper mode formatting to work correctly. The following line needed to be added to the .gitattributes file
+*.css text eol=crlf
+
  Live version of gic_volumeMeter_website
 
 [![logoPicture](/docs/images/girlsIntoCodingLogo.jpg)](https://www.girlsintocoding.com/)
