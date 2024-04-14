@@ -30,11 +30,11 @@
       <description>Write some simple programs to check the micro:bit is working</description>
     </item>
     <item>
-      <title>✏️ Design our own turbine blades</title>
-      <link>https://meisben.github.io/gic_volumeMeter_website_live/posts/design_wind_turbine_blades/</link>
+      <title>🔉 How do we measure a sound?</title>
+      <link>https://meisben.github.io/gic_volumeMeter_website_live/posts/measure_sound_with_microbit/</link>
       <pubDate>Sat, 20 Jan 2024 08:05:00 +0000</pubDate>
-      <guid>https://meisben.github.io/gic_volumeMeter_website_live/posts/design_wind_turbine_blades/</guid>
-      <description>Learing about airfoils and designing one</description>
+      <guid>https://meisben.github.io/gic_volumeMeter_website_live/posts/measure_sound_with_microbit/</guid>
+      <description>Measure sound using the microbit</description>
     </item>
     <item>
       <title>⚡ Measuring wind turbine velocity</title>
