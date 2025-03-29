@@ -1,75 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Girls into Coding | Volume Meter Actvity</title>
-    <link>https://meisben.github.io/gic_volumeMeter_website_live/</link>
-    <description>Recent content on Girls into Coding | Volume Meter Actvity</description>
-    <generator>Hugo -- 0.121.2</generator>
+    <title>Girls into Coding | Wind Turbine Activity</title>
+    <link>https://meisben.github.io/gic_windTurbine_website_live/</link>
+    <description>Recent content on Girls into Coding | Wind Turbine Activity</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Apr 2024 08:05:00 +0000</lastBuildDate>
-    <atom:link href="https://meisben.github.io/gic_volumeMeter_website_live/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Jan 2024 08:05:00 +0000</lastBuildDate>
+    <atom:link href="https://meisben.github.io/gic_windTurbine_website_live/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>👋 Welcome</title>
-      <link>https://meisben.github.io/gic_volumeMeter_website_live/posts/welcome/</link>
-      <pubDate>Wed, 10 Apr 2024 08:05:00 +0000</pubDate>
-      <guid>https://meisben.github.io/gic_volumeMeter_website_live/posts/welcome/</guid>
+      <link>https://meisben.github.io/gic_windTurbine_website_live/posts/welcome/</link>
+      <pubDate>Mon, 22 Jan 2024 08:05:00 +0000</pubDate>
+      <guid>https://meisben.github.io/gic_windTurbine_website_live/posts/welcome/</guid>
       <description>About the activity</description>
     </item>
     <item>
-      <title>🕹️ Intro to the BBC microbit</title>
-      <link>https://meisben.github.io/gic_volumeMeter_website_live/posts/intro_to_bbc_microbit/</link>
-      <pubDate>Thu, 21 Mar 2024 08:05:00 +0000</pubDate>
-      <guid>https://meisben.github.io/gic_volumeMeter_website_live/posts/intro_to_bbc_microbit/</guid>
-      <description>A short introduction to the BBC microbit microcontroller</description>
-    </item>
-    <item>
-      <title>🖱️ Get started with the micro:bit</title>
-      <link>https://meisben.github.io/gic_volumeMeter_website_live/posts/get_started_with_the_microbit/</link>
+      <title>🔧 Assembling a basic wind turbine</title>
+      <link>https://meisben.github.io/gic_windTurbine_website_live/posts/basic_wind_turbine_assembly/</link>
       <pubDate>Sun, 21 Jan 2024 08:05:00 +0000</pubDate>
-      <guid>https://meisben.github.io/gic_volumeMeter_website_live/posts/get_started_with_the_microbit/</guid>
-      <description>Write some simple programs to check the micro:bit is working</description>
+      <guid>https://meisben.github.io/gic_windTurbine_website_live/posts/basic_wind_turbine_assembly/</guid>
+      <description>In this step we will build a simple wind turbine and make it turn</description>
     </item>
     <item>
-      <title>📈 How do we measure a sound?</title>
-      <link>https://meisben.github.io/gic_volumeMeter_website_live/posts/measure_sound_with_microbit/</link>
+      <title>✏️ Design our own turbine blades</title>
+      <link>https://meisben.github.io/gic_windTurbine_website_live/posts/design_wind_turbine_blades/</link>
       <pubDate>Sat, 20 Jan 2024 08:05:00 +0000</pubDate>
-      <guid>https://meisben.github.io/gic_volumeMeter_website_live/posts/measure_sound_with_microbit/</guid>
-      <description>Measure sound using the microbit</description>
+      <guid>https://meisben.github.io/gic_windTurbine_website_live/posts/design_wind_turbine_blades/</guid>
+      <description>Learing about airfoils and designing one</description>
     </item>
     <item>
-      <title>🔧 Assemble our motor and volume indicator</title>
-      <link>https://meisben.github.io/gic_volumeMeter_website_live/posts/assemble_the_volume_meter/</link>
+      <title>⚡ Measuring wind turbine velocity</title>
+      <link>https://meisben.github.io/gic_windTurbine_website_live/posts/measuring_wind_turbine_velocity/</link>
       <pubDate>Fri, 19 Jan 2024 08:05:00 +0000</pubDate>
-      <guid>https://meisben.github.io/gic_volumeMeter_website_live/posts/assemble_the_volume_meter/</guid>
-      <description>Let’s assemble our motor and volume indicator</description>
+      <guid>https://meisben.github.io/gic_windTurbine_website_live/posts/measuring_wind_turbine_velocity/</guid>
+      <description>Measuring the infered velocity, by measuring voltage with a multimeter</description>
     </item>
     <item>
-      <title>🔩 Making the motor move</title>
-      <link>https://meisben.github.io/gic_volumeMeter_website_live/posts/make_the_motor_move/</link>
+      <title>🔩 Extending our wind turbine features</title>
+      <link>https://meisben.github.io/gic_windTurbine_website_live/posts/extending_wind_turbine_features/</link>
       <pubDate>Thu, 18 Jan 2024 08:05:00 +0000</pubDate>
-      <guid>https://meisben.github.io/gic_volumeMeter_website_live/posts/make_the_motor_move/</guid>
-      <description>Understanding and making the motor move</description>
+      <guid>https://meisben.github.io/gic_windTurbine_website_live/posts/extending_wind_turbine_features/</guid>
+      <description>Adding a microcontroller and electrical circuit to our wind turbine</description>
     </item>
     <item>
-      <title>📐 How angles are defined</title>
-      <link>https://meisben.github.io/gic_volumeMeter_website_live/posts/how_angles_are_defined/</link>
+      <title>📈 Using a microcontroller to record velocity</title>
+      <link>https://meisben.github.io/gic_windTurbine_website_live/posts/using_microcontroller_to_monitor_velocity/</link>
       <pubDate>Wed, 17 Jan 2024 08:05:00 +0000</pubDate>
-      <guid>https://meisben.github.io/gic_volumeMeter_website_live/posts/how_angles_are_defined/</guid>
-      <description>The definition of angles is something that every roboticist shares!</description>
+      <guid>https://meisben.github.io/gic_windTurbine_website_live/posts/using_microcontroller_to_monitor_velocity/</guid>
+      <description>Using a special type of computer to chart the velocity</description>
     </item>
     <item>
-      <title>🔉 Creating a volume meter</title>
-      <link>https://meisben.github.io/gic_volumeMeter_website_live/posts/create_volume_meter/</link>
+      <title>📡 Monitor the wind turbine remotely</title>
+      <link>https://meisben.github.io/gic_windTurbine_website_live/posts/monitor_wind_turbine_remotely/</link>
       <pubDate>Tue, 16 Jan 2024 08:05:00 +0000</pubDate>
-      <guid>https://meisben.github.io/gic_volumeMeter_website_live/posts/create_volume_meter/</guid>
-      <description>Let&amp;rsquo;s create the full working volume meter</description>
+      <guid>https://meisben.github.io/gic_windTurbine_website_live/posts/monitor_wind_turbine_remotely/</guid>
+      <description>Using radio to broadcast the measured voltage to a remote microcontroller</description>
     </item>
     <item>
-      <title>⏱️ Extension challenges</title>
-      <link>https://meisben.github.io/gic_volumeMeter_website_live/posts/extension_challenges/</link>
+      <title>⏱️ Test your own turbine blades</title>
+      <link>https://meisben.github.io/gic_windTurbine_website_live/posts/test_your_own_wind_turbine_blades/</link>
       <pubDate>Mon, 15 Jan 2024 08:05:00 +0000</pubDate>
-      <guid>https://meisben.github.io/gic_volumeMeter_website_live/posts/extension_challenges/</guid>
-      <description>For those who completed all the other activities</description>
+      <guid>https://meisben.github.io/gic_windTurbine_website_live/posts/test_your_own_wind_turbine_blades/</guid>
+      <description>Measuring how the turbine blades you designed perform</description>
     </item>
   </channel>
 </rss>

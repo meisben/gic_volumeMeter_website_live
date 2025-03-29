@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>📡 Monitor the wind turbine remotely | Girls into Coding | Wind Turbine Activity</title>
+<meta name="keywords" content="">
+<meta name="description" content="Using radio to broadcast the measured voltage to a remote microcontroller">
+<meta name="author" content="Ben MC">
+<link rel="canonical" href="https://meisben.github.io/gic_windTurbine_website_live/posts/monitor_wind_turbine_remotely/">
+<link crossorigin="anonymous" href="https://meisben.github.io/gic_windTurbine_website_live/assets/css/stylesheet.4599eadb9eb2ad3d0a8d6827b41a8fda8f2f4af226b63466c09c5fddbc8706b7.css" integrity="sha256-RZnq256yrT0KjWgntBqP2o8vSvImtjRmwJxf3byHBrc=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://meisben.github.io/gic_windTurbine_website_live/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://meisben.github.io/gic_windTurbine_website_live/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://meisben.github.io/gic_windTurbine_website_live/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://meisben.github.io/gic_windTurbine_website_live/apple-touch-icon.png">
+<link rel="mask-icon" href="https://meisben.github.io/gic_windTurbine_website_live/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="📡 Monitor the wind turbine remotely" />
+<meta property="og:description" content="Using radio to broadcast the measured voltage to a remote microcontroller" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://meisben.github.io/gic_windTurbine_website_live/posts/monitor_wind_turbine_remotely/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-01-16T08:05:00+00:00" />
+<meta property="article:modified_time" content="2024-01-16T08:05:00+00:00" /><meta property="og:site_name" content="changeThisTitle" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="📡 Monitor the wind turbine remotely"/>
+<meta name="twitter:description" content="Using radio to broadcast the measured voltage to a remote microcontroller"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://meisben.github.io/gic_windTurbine_website_live/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "📡 Monitor the wind turbine remotely",
+      "item": "https://meisben.github.io/gic_windTurbine_website_live/posts/monitor_wind_turbine_remotely/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "📡 Monitor the wind turbine remotely",
+  "name": "📡 Monitor the wind turbine remotely",
+  "description": "Using radio to broadcast the measured voltage to a remote microcontroller",
+  "keywords": [
+    
+  ],
+  "articleBody": " Introduction Aims In this part of the activity we will:\nTransmit our recorded voltage as a radio signal using the micro:bit Receive our radio signal using a seperate micro:bit Plot that value on the computer Learning outcomes Learning outcome Code Understand the power of built in code features and libraries Radio waves Understand how these are transmitted and received Visualisation How to visualise a value on a computer and export a data series Preperation Equipment required Equipment item Quantity Custom wind turbine kit (you just assembled it!) 1 Extra micro:bit 1 Tools required Tool Quantity Laptop/PC 1 Transmitting the measured voltage as a radio signal Using two microbits We will be using two microbits.\nMicro:bit A will send a radio signal (with the voltage measurement). It is attached to the wind turbine. Micro:bit B will receive a radio signal (with the voltage measurement). It is attached to your computer. The radio signal can be transmitted up to 70 meters.\nProgramming Micro:bit A 🐘 Reminder: Micro:bit A will send a radio signal (with the voltage measurement). It is attached to the wind turbine.\nGo to micro:bit make code and start a new program\nEnter this code. You will need to use:\nPins Variables Serial Radio ⚠️ Pick your own radio group from 0-255. Both micro:bits need to use the same group. It must not be the same as anyone else’s in the room.\nDownload it to your microbit You will need to:\nInsert your usb lead Connect your device (as shown in the image below) Run the program You should see:\nA big square shown on the microbit display You can now unplug the micro:bit from the usb lead.\nConnect the battery to the micro:bit. It should show the same image on its display without being connected to the computer\n📡 You’re now continuously transmitting the voltage value as a radio signal!\nReceiving the measured voltage as a radio signal Programming Micro:bit B 🐘 Reminder: Micro:bit B will receive a radio signal (with the voltage measurement). It is attached to your computer.\nGo to micro:bit make code and start a new program\nEnter this code. You will need to use:\nSerial Radio ⚠️ Use the same radio group as for Micro:bit A\nDownload it to your microbit You will need to:\nInsert your usb lead Connect your device (as shown in the image below) Run the program Go to show data - device\nYou should see:\nA small square shown on the microbit display When you rotate the shaft of the wind turbine clockwise, then Micro:bit A reads the analogue input and transmits it to Micro:bit B as a radio signal Micro:bit B transmits this as serial data (along the usb cable) to the computer 🎉 You’re now continuously transmitting and receiving the voltage value as a radio signal!\nTest it with the wind turbine blades Next steps:\nInstall the wind turbine flat blades Hold the wind turbine in front of a fan Check the voltage value is plotted on a computer when the wind turbine turns ",
+  "wordCount" : "506",
+  "inLanguage": "en",
+  "datePublished": "2024-01-16T08:05:00Z",
+  "dateModified": "2024-01-16T08:05:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Ben MC"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://meisben.github.io/gic_windTurbine_website_live/posts/monitor_wind_turbine_remotely/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Girls into Coding | Wind Turbine Activity",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://meisben.github.io/gic_windTurbine_website_live/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://meisben.github.io/gic_windTurbine_website_live/" accesskey="h" title="Girls into Coding | Wind Turbine Activity (Alt + H)">Girls into Coding | Wind Turbine Activity</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://meisben.github.io/gic_windTurbine_website_live/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://meisben.github.io/gic_windTurbine_website_live/categories/" title="Instructions">
+                    <span>Instructions</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      📡 Monitor the wind turbine remotely
+    </h1>
+  </header> 
+  <div class="post-content"><hr>
+<h1 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h1>
+<h2 id="aims">Aims<a hidden class="anchor" aria-hidden="true" href="#aims">#</a></h2>
+<p>In this part of the activity we will:</p>
+<ul>
+<li>Transmit our recorded voltage as a radio signal using the micro:bit</li>
+<li>Receive our radio signal using a seperate micro:bit</li>
+<li>Plot that value on the computer</li>
+</ul>
+<h2 id="learning-outcomes">Learning outcomes<a hidden class="anchor" aria-hidden="true" href="#learning-outcomes">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Learning outcome</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Code</td>
+<td>Understand the power of built in code features and libraries</td>
+</tr>
+<tr>
+<td>Radio waves</td>
+<td>Understand how these are transmitted and received</td>
+</tr>
+<tr>
+<td>Visualisation</td>
+<td>How to visualise a value on a computer and export a data series</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="preperation">Preperation<a hidden class="anchor" aria-hidden="true" href="#preperation">#</a></h1>
+<h2 id="equipment-required">Equipment required<a hidden class="anchor" aria-hidden="true" href="#equipment-required">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Equipment item</th>
+<th style="text-align:center">Quantity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Custom wind turbine kit (you just assembled it!)</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td>Extra micro:bit</td>
+<td style="text-align:center">1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tools-required">Tools required<a hidden class="anchor" aria-hidden="true" href="#tools-required">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th style="text-align:center">Quantity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Laptop/PC</td>
+<td style="text-align:center">1</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="transmitting-the-measured-voltage-as-a-radio-signal">Transmitting the measured voltage as a radio signal<a hidden class="anchor" aria-hidden="true" href="#transmitting-the-measured-voltage-as-a-radio-signal">#</a></h1>
+<h2 id="using-two-microbits">Using two microbits<a hidden class="anchor" aria-hidden="true" href="#using-two-microbits">#</a></h2>
+<p>We will be using two microbits.</p>
+<ul>
+<li><strong>Micro:bit A</strong> will send a radio signal (with the voltage measurement). It is attached to the wind turbine.</li>
+<li><strong>Micro:bit B</strong> will receive a radio signal (with the voltage measurement). It is attached to your computer.</li>
+</ul>
+<p>The radio signal can be transmitted up to 70 meters.</p>
+<p><a href="https://meisben.github.io/gic_windTurbine_website_live/images/monitor_wind_turbine_remotely/microbit_radio_sender_receiver_v1.png"><img loading="lazy" src="https://meisben.github.io/gic_windTurbine_website_live/images/monitor_wind_turbine_remotely/microbit_radio_sender_receiver_v1.png" alt="Pic"  />
+</a></p>
+<h2 id="programming-microbit-a">Programming Micro:bit A<a hidden class="anchor" aria-hidden="true" href="#programming-microbit-a">#</a></h2>
+<blockquote>
+<p>&#x1f418; Reminder: <strong>Micro:bit A</strong> will send a radio signal (with the voltage measurement). It is attached to the wind turbine.</p>
+</blockquote>
+<p>Go to <a href="https://makecode.microbit.org">micro:bit make code</a> and start a new program</p>
+<p>Enter this code. You will need to use:</p>
+<ul>
+<li>Pins</li>
+<li>Variables</li>
+<li>Serial</li>
+<li>Radio</li>
+</ul>
+<blockquote>
+<p>&#x26a0;&#xfe0f; Pick your own radio group from 0-255. Both micro:bits need to use the same group. It must not be the same as anyone else&rsquo;s in the room.</p>
+</blockquote>
+<p><a href="https://meisben.github.io/gic_windTurbine_website_live/images/monitor_wind_turbine_remotely/code_radio_send_voltage_v2.png"><img loading="lazy" src="https://meisben.github.io/gic_windTurbine_website_live/images/monitor_wind_turbine_remotely/code_radio_send_voltage_v2.png" alt="Pic"  />
+</a></p>
+<h2 id="download-it-to-your-microbit">Download it to your microbit<a hidden class="anchor" aria-hidden="true" href="#download-it-to-your-microbit">#</a></h2>
+<p>You will need to:</p>
+<ul>
+<li>Insert your usb lead</li>
+<li>Connect your device (as shown in the image below)</li>
+</ul>
+<p><a href="https://meisben.github.io/gic_windTurbine_website_live/images/using_microcontroller_to_monitor_velocity/connect_device_v1.png"><img loading="lazy" src="https://meisben.github.io/gic_windTurbine_website_live/images/using_microcontroller_to_monitor_velocity/connect_device_v1.png" alt="Pic"  />
+</a></p>
+<h2 id="run-the-program">Run the program<a hidden class="anchor" aria-hidden="true" href="#run-the-program">#</a></h2>
+<p>You should see:</p>
+<ul>
+<li>A big square shown on the microbit display</li>
+</ul>
+<p>You can now unplug the micro:bit from the usb lead.</p>
+<p>Connect the battery to the micro:bit. It should show the same image on its display without being connected to the computer</p>
+<blockquote>
+<p>&#x1f4e1; You&rsquo;re now continuously transmitting the voltage value as a radio signal!</p>
+</blockquote>
+<p><a href="https://meisben.github.io/gic_windTurbine_website_live/images/monitor_wind_turbine_remotely/microbit_A_transmit_v1.jpg"><img loading="lazy" src="https://meisben.github.io/gic_windTurbine_website_live/images/monitor_wind_turbine_remotely/microbit_A_transmit_v1.jpg" alt="Pic"  />
+</a></p>
+<hr>
+<h1 id="receiving-the-measured-voltage-as-a-radio-signal">Receiving the measured voltage as a radio signal<a hidden class="anchor" aria-hidden="true" href="#receiving-the-measured-voltage-as-a-radio-signal">#</a></h1>
+<h2 id="programming-microbit-b">Programming Micro:bit B<a hidden class="anchor" aria-hidden="true" href="#programming-microbit-b">#</a></h2>
+<blockquote>
+<p>&#x1f418; Reminder: <strong>Micro:bit B</strong> will receive a radio signal (with the voltage measurement). It is attached to your computer.</p>
+</blockquote>
+<p>Go to <a href="https://makecode.microbit.org">micro:bit make code</a> and start a new program</p>
+<p>Enter this code. You will need to use:</p>
+<ul>
+<li>Serial</li>
+<li>Radio</li>
+</ul>
+<blockquote>
+<p>&#x26a0;&#xfe0f; Use the same radio group as for <strong>Micro:bit A</strong></p>
+</blockquote>
+<p><a href="https://meisben.github.io/gic_windTurbine_website_live/images/monitor_wind_turbine_remotely/code_radio_receive_voltage_v2.png"><img loading="lazy" src="https://meisben.github.io/gic_windTurbine_website_live/images/monitor_wind_turbine_remotely/code_radio_receive_voltage_v2.png" alt="Pic"  />
+</a></p>
+<h2 id="download-it-to-your-microbit-1">Download it to your microbit<a hidden class="anchor" aria-hidden="true" href="#download-it-to-your-microbit-1">#</a></h2>
+<p>You will need to:</p>
+<ul>
+<li>Insert your usb lead</li>
+<li>Connect your device (as shown in the image below)</li>
+</ul>
+<p><a href="https://meisben.github.io/gic_windTurbine_website_live/images/using_microcontroller_to_monitor_velocity/connect_device_v1.png"><img loading="lazy" src="https://meisben.github.io/gic_windTurbine_website_live/images/using_microcontroller_to_monitor_velocity/connect_device_v1.png" alt="Pic"  />
+</a></p>
+<h2 id="run-the-program-1">Run the program<a hidden class="anchor" aria-hidden="true" href="#run-the-program-1">#</a></h2>
+<p>Go to <em>show data - device</em></p>
+<p>You should see:</p>
+<ul>
+<li>A small square shown on the microbit display</li>
+<li>When you rotate the shaft of the wind turbine clockwise, then <strong>Micro:bit A</strong> reads the analogue input and transmits it to <strong>Micro:bit B</strong> as a radio signal</li>
+<li><strong>Micro:bit B</strong> transmits this as serial data (along the usb cable) to the computer</li>
+</ul>
+<p><a href="https://meisben.github.io/gic_windTurbine_website_live/images/monitor_wind_turbine_remotely/serial_data_received_radio_v1.png"><img loading="lazy" src="https://meisben.github.io/gic_windTurbine_website_live/images/monitor_wind_turbine_remotely/serial_data_received_radio_v1.png" alt="Pic"  />
+</a></p>
+<blockquote>
+<p>&#x1f389; You&rsquo;re now continuously transmitting and receiving the voltage value as a radio signal!</p>
+</blockquote>
+<hr>
+<h1 id="test-it-with-the-wind-turbine-blades">Test it with the wind turbine blades<a hidden class="anchor" aria-hidden="true" href="#test-it-with-the-wind-turbine-blades">#</a></h1>
+<p>Next steps:</p>
+<ul>
+<li>Install the wind turbine flat blades</li>
+<li>Hold the wind turbine in front of a fan</li>
+<li>Check the voltage value is plotted on a computer when the wind turbine turns</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://meisben.github.io/gic_windTurbine_website_live/posts/using_microcontroller_to_monitor_velocity/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>📈 Using a microcontroller to record velocity</span>
+  </a>
+  <a class="next" href="https://meisben.github.io/gic_windTurbine_website_live/posts/test_your_own_wind_turbine_blades/">
+    <span class="title">Next »</span>
+    <br>
+    <span>⏱️ Test your own turbine blades</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="https://meisben.github.io/gic_windTurbine_website_live/">Girls into Coding | Wind Turbine Activity</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
