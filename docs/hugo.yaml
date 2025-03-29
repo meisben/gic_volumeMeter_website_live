@@ -1,0 +1,39 @@
+baseURL: "https://meisben.github.io/gic_windTurbine_website_live/"
+canonifyURLs: true
+languageCode: en-us
+title: Girls into Coding | Wind Turbine Activity
+theme: PaperMod
+enableEmoji: true
+
+params:
+  title: changeThisTitle
+  description: "A Girls into Coding activity"
+  author: "Ben MC"
+  hidemeta: true
+  hideSummary: false
+  ShowPostNavLinks: true
+
+  profileMode:
+    enabled: true
+    title: "Hi there 👋🏿" # optional default will be site title
+    subtitle: "Welcome to this Girls into Coding wind turbine activity"
+    imageUrl: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F636197819%2F144577225540%2F1%2Foriginal.20231106-190111?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=74%2C47%2C1849%2C1849&s=8738987cf5375c5ea09a904e4b192052" # optional
+    imageTitle: "Wind" # optional
+    imageWidth: 120 # custom size
+    imageHeight: 120 # custom size
+    buttons:
+      - name: Get started
+        url: "categories/"
+      - name: About Girls into Coding
+        url: "https://www.girlsintocoding.com/"
+
+menu:
+  main:
+    - identifier: about
+      name: Home
+      url: ""
+      weight: 10
+    - identifier: instructions
+      name: Instructions
+      url: categories/
+      weight: 20
